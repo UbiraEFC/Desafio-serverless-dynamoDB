@@ -14,13 +14,14 @@
 
 
 ## Descrição
-- Projeto de cadastro de tarefas 
+- Projeto de cadastro de tarefas, utilizando Serverless para as funções, DinamoDB para armazenamento e deploy feio no Lambda AWS.
 
 ## Tecnologias 
 - [Serverless Framework](serverless.com/)
 - [Node.js](https://nodejs.org/en/)
 - [Typescript](https://www.typescriptlang.org/)
 - [Amazon DynamoDB](https://aws.amazon.com/pt/dynamodb/)
+- [Amazon Lambda](https://aws.amazon.com/pt/lambda/)
 
 ## 💻 Download, instação de dependências e executação do Projeto
 **1.** Clone este repositório 
