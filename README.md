@@ -6,20 +6,26 @@
 
   Ignite Journey
 </h1>
+
+<p align="center">
+  <img alt="Node.js Logo" src="https://img.shields.io/badge/Node.js-LTS-339933?logo=node.js">&nbsp;&nbsp;
+   <img alt="License" src="https://img.shields.io/static/v1?label=license&message=MIT&color=8257E5&labelColor=000000">
+</p>
+
+
 ## Descrição
 - Projeto de cadastro de tarefas 
 
 ## Tecnologias 
-- Serverless
-- DynamoDB
-- Typescript
-- Node
+- [Serverless Framework](serverless.com/)
+- [Node.js](https://nodejs.org/en/)
+- [Typescript](https://www.typescriptlang.org/)
+- [Amazon DynamoDB](https://aws.amazon.com/pt/dynamodb/)
 
 ## 💻 Download, instação de dependências e executação do Projeto
 **1.** Clone este repositório 
 ```
 git clone git@github.com:UbiraEFC/Desafio-serverless-dynamoDB.git
-
 ``` 
 **2.** Vá até o diretório raiz do projeto
 ```
@@ -27,7 +33,7 @@ cd ignite-desafio-construindo-com-serverless
 ``` 
 **3.** Instale as dependências necessárias
 ```
-yarn install
+yarn
 ```
 **4.** Instale e inicie o dynamoDB
 ```
@@ -45,6 +51,7 @@ Nesse desafio você irá recriar uma parte da API de *todos* que foi desenvolvid
 Cada funcionalidade deverá ser criada em um arquivo de função separada de acordo com o que foi visto nesse último módulo.
 ### As rotas que deverão existir são:
 - **POST -** `/todos/{user_id}`
+
 	Essa rota deve receber o id de um usuário pelo pathParameters (você pode criar esse id manualmente apenas para preencher o campo) e os seguintes campos no corpo da requisição: title e deadline, onde deadline é a data limite para o todo.
 
 	O todo deverá ser salvo com os seguintes campos no DynamoDB:
@@ -60,6 +67,7 @@ Cada funcionalidade deverá ser criada em um arquivo de função separada de aco
 	```
 
 - **GET -** `/todos/{user_id}`
+
 	Essa rota deve receber o id de um usuário pelo pathParameters (o mesmo id que foi usado para criar algum todo).
 
 	A rota deve retornar os todos que possuírem o user_id igual ao id recebido pelos parâmetros.
